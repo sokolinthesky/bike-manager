@@ -4,14 +4,18 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {BikeService} from "./services/bike.service";
 import {HttpClientModule} from "@angular/common/http";
+import { AdminComponent } from './components/admin/admin.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [BikeService],
   bootstrap: [AppComponent]
